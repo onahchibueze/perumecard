@@ -1,6 +1,20 @@
 @import "/css/normalize.css";
 html{
     font-size: 62.5%;
+    
+}
+:root{
+
+
+--Dark-cyan: hsl(158, 36%, 37%);
+ --Cream: hsl(30, 38%, 92%);
+
+
+
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+
 }
 *,*::before, *::after{
     box-sizing:border-box;
@@ -11,30 +25,94 @@ html{
   }
   img{
     width: 100%;
+    height: 100%;
+   
   }
+  /*Display*/
   .grid{
     display: grid;
   }
  
   .card{
  
-    border-radius: 40px;
+    border-radius: 15px;
     overflow: hidden;
+  margin: auto;
   max-width: 375px;
+  color: #fff;
+
   }
+  .card .icon-button{
+ 
+    background: var(--Dark-cyan);
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    font-family: montserrat, sans-serif;
+    font-size: 15px;
+    outline: 0;
+    padding: 2rem 3rem;
+    position: relative;
+text-align: center;
+margin-top: 5rem;
+margin-bottom: 0;
+transition: background-color 0.2s ease-out;
+
+  
+  }
+  .icon-button:hover{
+    background-color: rgb(1, 27, 6);
+  }
+  .icon-button::before{
+    content: url(/images/icon-cart.svg);
+margin-right: 2rem;
+
+
+  }
+  /*styling fonts*/
   .main_heading{
     font-family:Fraunces,  sans-serif;
     font-weight: 700;
- font-size: 3.5rem;
+    font-size: 4rem;
+    color: var(--Very-dark-blue);
+    margin-top: 1rem;
   }
+  .description_heading .perfume_info{
+    margin-top: 0.5rem;
+text-transform: uppercase;
+letter-spacing: 1rem;
+  }
+    .perfume_info{
+    font-size: 1.4rem;
+    font-family: Montserrat, sans-serif;
+    color: var(--Dark-grayish-blue);
+    line-height: 2.5rem;
+   }
+   .description_price{
+  color: var(--Dark-cyan);
+
+   }
+   .main_heading .cancel_price{
+ text-decoration:line-through ;
+vertical-align: middle;
+margin-left: 20px;
+
+   }
    @media screen and (min-width: 768px) {
     
    .grid{
     grid-template-columns: 1fr 1fr;
+  
 
     }
     .card{
-      max-width: 100%;
+      max-width: 768px;
+    
     
     }
+  }
+  .card_description{
+    background-color: var(--Cream);
+    padding: 3rem 4rem;
+
   }

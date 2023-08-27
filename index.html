@@ -19,15 +19,23 @@
 <div class="card">
     <div class="grid ">
         <picture>
-            <source 
-            srcset="/images/mobile.jpg , /images/destktop.jpg 2x ">
-            <img src="/images/mobile.jpg">
+            <source media="(max-width: 767px)" srcset="images/mobile.jpg">
+            <source media="(min-width: 768px)" srcset="images/desktop.jpg">
+            <img src="/images/desktop.jpg" alt="">
         </picture>
-<div class="card_discription">
-    <div class="discription_heading">
+<div class="card_description">
+    <div class="description_heading">
+        <p class="perfume_info">Perfume</p>
         <h1 class="main_heading">Gabrielle Essence Eau De Parfum</h1>
     </div>
+    <p class="perfume_info"> A floral, solar and voluptuous intertpretation coposed by
+        Oliver polge, perfmer-Creator fir the House if CHANEL 
+    </p>
+    <div class=" main_heading description_price">$149.99<span class="perfume_info cancel_price">$169.99</span></div>
+
+    <a ><div class="icon-button">Add cart</div></a>
 </div>
+
     </div>
 </div>
 </body>
