@@ -1,0 +1,40 @@
+@import "/css/normalize.css";
+html{
+    font-size: 62.5%;
+}
+*,*::before, *::after{
+    box-sizing:border-box;
+}
+::selection{
+    background: var(--color-primary);
+    color: #fff;
+  }
+  img{
+    width: 100%;
+  }
+  .grid{
+    display: grid;
+  }
+ 
+  .card{
+ 
+    border-radius: 40px;
+    overflow: hidden;
+  max-width: 375px;
+  }
+  .main_heading{
+    font-family:Fraunces,  sans-serif;
+    font-weight: 700;
+ font-size: 3.5rem;
+  }
+   @media screen and (min-width: 768px) {
+    
+   .grid{
+    grid-template-columns: 1fr 1fr;
+
+    }
+    .card{
+      max-width: 100%;
+    
+    }
+  }
